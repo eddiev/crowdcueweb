@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — CrowdCue</title>
+    <meta
+      name="description"
+      content="Contact CrowdCue to join the waitlist or request early access."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="glow glow--primary"></div>
+      <div class="glow glow--accent"></div>
+      <div class="grid"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="index.html">CrowdCue</a>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="is-active">Contact</a>
+        </nav>
+        <a class="cta cta--ghost" href="contact.html">Request access</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s build the next moment together.</h1>
+          <p class="lead">
+            Interested in early access, partnerships, or a live demo? Drop a note
+            and we will follow up.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <form class="contact-form" action="#" method="post">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@email.com" required />
+            </label>
+            <label>
+              Organization
+              <input type="text" name="org" placeholder="Venue, team, or brand" />
+            </label>
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Tell us about your event goals"
+                required
+              ></textarea>
+            </label>
+            <button class="cta" type="submit">Send message</button>
+          </form>
+          <div class="contact-card">
+            <h3>General inquiries</h3>
+            <p>hello@crowdcue.com</p>
+            <h3>Location</h3>
+            <p>FPO — Remote-first team</p>
+            <h3>Social</h3>
+            <p>Instagram • TikTok • LinkedIn</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <div class="brand brand--footer">CrowdCue</div>
+          <p class="footer__tagline">Capture the crowd. Curate the moment.</p>
+        </div>
+        <div class="footer__links">
+          <a href="mailto:hello@crowdcue.com">hello@crowdcue.com</a>
+          <a href="about.html">About</a>
+          <a href="index.html">Home</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
