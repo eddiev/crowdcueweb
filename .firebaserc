@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "crowdcue-775b5",
+    "prod": "crowdcue-775b5",
+    "dev": "crowdcue-dev"
+  }
+}

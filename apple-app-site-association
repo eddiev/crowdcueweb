@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "62DTE3P274.com.crowdcueapp.crowdcue",
+          "62DTE3P274.com.crowdcueapp.CrowdCue.dev"
+        ],
+        "paths": ["/auth/*", "/e/*", "/*"]
+      }
+    ]
+  }
+}
