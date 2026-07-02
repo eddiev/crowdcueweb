@@ -108,6 +108,87 @@ textarea {
   margin: 0 auto;
 }
 
+.invite-main {
+  width: min(900px, 92vw);
+  margin: 0 auto;
+  min-height: calc(100vh - 110px);
+  display: grid;
+  place-items: center;
+  padding: 32px 0 56px;
+}
+
+.invite-card {
+  width: min(680px, 100%);
+  padding: 36px;
+  border-radius: var(--radius-card);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(8, 18, 21, 0.08);
+  box-shadow: 0 24px 60px rgba(8, 18, 21, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.invite-eyebrow {
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(8, 18, 21, 0.58);
+  margin-bottom: 14px;
+}
+
+.invite-title {
+  font-size: clamp(2rem, 4.8vw, 3.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  font-weight: 300;
+  max-width: 12ch;
+  margin-bottom: 18px;
+}
+
+.invite-copy {
+  font-size: 1.05rem;
+  color: rgba(8, 18, 21, 0.78);
+  max-width: 52ch;
+}
+
+.invite-meta {
+  margin-top: 28px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(8, 18, 21, 0.04);
+}
+
+.invite-meta__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(8, 18, 21, 0.52);
+  margin-bottom: 8px;
+}
+
+.invite-meta__value {
+  font-size: 0.98rem;
+  color: rgba(8, 18, 21, 0.88);
+  word-break: break-word;
+}
+
+.invite-actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button--secondary {
+  background: rgba(8, 18, 21, 0.08);
+}
+
+.button--secondary:hover {
+  transform: translateY(-1px);
+  background: rgba(8, 18, 21, 0.12);
+}
+
 .hero {
   min-height: calc(100vh - 110px);
   display: grid;

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CrowdCue Invite</title>
+    <meta
+      name="description"
+      content="Open your CrowdCue invite or request beta access to join the room."
+    />
+    <meta name="robots" content="noindex,follow" />
+    <meta name="theme-color" content="#ececec" />
+    <link rel="canonical" href="https://crowdcueapp.com/invite.html" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="page page--invite">
+    <div class="background"></div>
+
+    <header class="topbar">
+      <a class="brand" href="/index.html" aria-label="CrowdCue home">
+        <img
+          class="brand__mark"
+          src="/assets/crowd-cue-logo-web_new.png"
+          alt=""
+          aria-hidden="true"
+          width="28"
+          height="28"
+        />
+        <span class="brand__text">CrowdCue</span>
+      </a>
+      <a class="button button--primary" href="/contact.html">Request Access</a>
+    </header>
+
+    <main class="invite-main">
+      <section class="invite-card" aria-label="CrowdCue invite">
+        <p class="invite-eyebrow">You’ve been invited to a CrowdCue moment</p>
+        <h1 class="invite-title">Open this link on an iPhone with CrowdCue installed.</h1>
+        <p class="invite-copy">
+          If CrowdCue is already installed, tapping this invite should open the app directly.
+          If you do not have access yet, request the beta invite first and then join using the room code from the text message.
+        </p>
+
+        <div class="invite-meta">
+          <div class="invite-meta__label">Invite link</div>
+          <div class="invite-meta__value" id="invite-link-value">crowdcueapp.com/e/...</div>
+        </div>
+
+        <div class="invite-actions">
+          <a class="button button--primary" href="/contact.html">Request Beta Access</a>
+          <a class="button button--secondary" href="/index.html">Back to Site</a>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      (() => {
+        const el = document.getElementById("invite-link-value");
+        if (!el) return;
+        const path = window.location.pathname || "";
+        const full = `${window.location.origin}${path}`;
+        el.textContent = full;
+      })();
+    </script>
+  </body>
+</html>

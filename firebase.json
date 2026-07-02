@@ -36,6 +36,12 @@
           }
         ]
       }
+    ],
+    "rewrites": [
+      {
+        "source": "/e/**",
+        "destination": "/invite.html"
+      }
     ]
   }
 }
