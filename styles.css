@@ -71,7 +71,7 @@ textarea {
 .brand__mark {
   width: 28px;
   height: 28px;
-  border-radius: 50%;
+  border-radius: 22%;
   object-fit: cover;
 }
 
