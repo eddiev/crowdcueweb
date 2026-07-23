@@ -1,5 +1,5 @@
-# crowdcueweb
-Repository for the official CrowdCue website.
+# stelliapp
+Repository for the official Stelli website.
 
 ## Local preview
 Run a simple local server from the repo root:
@@ -30,8 +30,8 @@ firebase deploy --only hosting --project crowdcue-775b5
 Validate:
 
 ```bash
-curl -i https://crowdcueapp.com/.well-known/apple-app-site-association
-curl -i https://crowdcueapp.com/apple-app-site-association
+curl -i https://stelliapp.com/.well-known/apple-app-site-association
+curl -i https://stelliapp.com/apple-app-site-association
 ```
 
 Expected:
