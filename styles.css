@@ -685,3 +685,72 @@ textarea {
     transform: none;
   }
 }
+
+/* Stelli homepage */
+.page--home {
+  --stelli-ink: #050a1b;
+  --stelli-navy: #08112b;
+  --stelli-violet: #24155f;
+  --stelli-paper: #f7f1e7;
+  --stelli-gold: #f5bd3d;
+  --stelli-amber: #f18b27;
+  --stelli-muted: #c5c6d5;
+  background: var(--stelli-ink);
+  color: var(--stelli-paper);
+}
+
+.page--home .stelli-hero { min-height: 940px; position: relative; isolation: isolate; overflow: hidden; background: #070c20; }
+.stelli-hero__scenes, .stelli-hero__scenes img, .stelli-hero__shade { position: absolute; inset: 0; width: 100%; height: 100%; }
+.stelli-hero__scenes img { object-fit: cover; opacity: 0; transition: opacity 1.3s ease; }
+.stelli-hero__scenes img.is-active { opacity: 1; }
+.stelli-hero__shade { background: linear-gradient(90deg, rgba(3,8,23,.96) 0%, rgba(4,9,28,.77) 39%, rgba(4,9,28,.25) 70%, rgba(3,8,23,.42) 100%), linear-gradient(0deg, rgba(3,8,20,.72), transparent 46%); }
+.stelli-nav { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: center; width: min(1376px, 100%); margin: 0 auto; padding: 34px 54px; }
+.stelli-brand { display: inline-flex; align-items: center; gap: 11px; color: var(--stelli-paper); font-family: var(--font-ui); font-size: 31px; font-weight: 300; letter-spacing: -.035em; }
+.stelli-brand img { width: 40px; height: 40px; border-radius: 11px; object-fit: cover; }
+.stelli-button { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; padding: 0 27px; border-radius: var(--radius-pill); background: #ffc400; color: #fff; font-family: var(--font-ui); font-size: 15px; font-weight: 650; letter-spacing: -.02em; transition: background-color .2s ease, color .2s ease; }
+.stelli-button:hover { background: #fff; color: #ffc400; }
+.stelli-button--nav { min-height: 48px; }
+.stelli-hero__copy { position: relative; z-index: 2; width: min(720px, 60vw); margin: 110px 0 0 max(54px, calc((100vw - 1376px) / 2 + 54px)); }
+.stelli-hero__copy h1, .page--home .stelli-product h2, .stelli-story-card h2, .stelli-discovery h2, .stelli-access h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; letter-spacing: -.055em; }
+.stelli-hero__copy h1 { margin: 0; max-width: 690px; font-size: clamp(72px, 7vw, 118px); line-height: .96; }
+.stelli-accent-rule { display: flex; align-items: center; gap: 10px; margin: 34px 0 27px; }
+.stelli-accent-rule::before { content: ""; display: block; width: 76px; height: 2px; background: var(--stelli-gold); }
+.stelli-accent-rule span { width: 10px; height: 10px; background: var(--stelli-gold); transform: rotate(45deg); box-shadow: 0 0 15px var(--stelli-gold); }
+.stelli-hero__copy p { margin: 0 0 34px; color: #f2d8c8; font-size: 25px; line-height: 1.35; letter-spacing: -.035em; }
+.stelli-hero__caption { position: absolute; z-index: 2; right: 54px; bottom: 57px; margin: 0; color: rgba(255,255,255,.72); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+.stelli-scene-controls { position: absolute; z-index: 2; left: 54px; bottom: 57px; display: flex; gap: 9px; }
+.stelli-scene-controls button { width: 32px; height: 3px; padding: 0; border: 0; background: rgba(255,255,255,.35); cursor: pointer; }
+.stelli-scene-controls button.is-current { background: var(--stelli-gold); }
+
+.stelli-product { position: relative; min-height: 790px; overflow: hidden; padding: 110px 54px 76px; background: radial-gradient(ellipse at 48% 15%, rgba(107,57,176,.46), transparent 47%), linear-gradient(155deg, #1a1147 0%, #090e2b 66%); }
+.stelli-phone-cluster { display: flex; justify-content: center; align-items: flex-end; gap: 22px; max-width: 1040px; margin: 0 auto; }
+.stelli-phone { position: relative; width: 242px; min-height: 440px; overflow: hidden; padding: 22px 17px; border: 4px solid rgba(235,212,166,.5); border-radius: 38px; background: linear-gradient(155deg,#101b3c,#080d23); box-shadow: 0 30px 55px rgba(0,0,0,.38); }
+.stelli-phone--center { z-index: 1; width: 293px; min-height: 505px; transform: translateY(38px); }
+img.stelli-phone { display: block; min-height: 0; height: auto; padding: 0; aspect-ratio: 1320 / 2716; object-fit: cover; background: #f7f7f7; }
+.stelli-screen { position: relative; min-height: 392px; color: #fff; font-size: 14px; }
+.stelli-phone--center .stelli-screen { min-height: 457px; }
+.stelli-screen p { margin: 0; color: #ddd8ed; }
+.stelli-screen small { position: absolute; right: 0; bottom: 0; left: 0; color: #77809f; text-align: center; font-size: 10px; letter-spacing: .04em; }
+.stelli-screen--listen > p { margin-top: 38px; text-align: center; }
+.stelli-avatar-row { display: flex; justify-content: center; margin: 20px 0; }
+.stelli-avatar-row i { width: 31px; height: 31px; margin-left: -5px; border: 2px solid #131a38; border-radius: 50%; background: linear-gradient(135deg,#f0ad49,#543a99); }
+.stelli-screen__orb { width: 150px; height: 150px; margin: 38px auto; border: 1px dotted #f6b63d; border-radius: 50%; box-shadow: inset 0 0 30px rgba(222,126,47,.25); }
+.stelli-screen--moment h2 { margin: 23px 0 15px; color: #fff; font-family: var(--font-ui); font-size: 20px; font-weight: 500; letter-spacing: 0; }
+.stelli-screen__art { display: grid; height: 190px; place-items: center; border: 1px solid rgba(246,181,45,.45); border-radius: 50%; background: radial-gradient(circle at 50% 40%,rgba(244,172,45,.45),transparent 45%),linear-gradient(155deg,#272362,#050917); color: #ffd26b; font-size: 44px; }
+.stelli-waveform { display: flex; height: 46px; align-items: center; justify-content: center; gap: 5px; margin: 22px 0; }
+.stelli-waveform i { width: 3px; height: 22px; border-radius: 9px; background: linear-gradient(#f6cd54,#e7772b); }
+.stelli-waveform i:nth-child(1){height:11px}.stelli-waveform i:nth-child(2){height:26px}.stelli-waveform i:nth-child(3){height:18px}.stelli-waveform i:nth-child(4){height:38px}.stelli-waveform i:nth-child(5){height:23px}.stelli-waveform i:nth-child(6){height:42px}.stelli-waveform i:nth-child(7){height:29px}.stelli-waveform i:nth-child(8){height:15px}.stelli-waveform i:nth-child(9){height:31px}
+.stelli-play { display: grid; width: 46px; height: 46px; place-items: center; margin: 0 auto; border-radius: 50%; background: #f8c74e; color: #221508; font-size: 13px; }
+.stelli-screen--library > p { margin: 22px 0 15px; color: #fff; font-size: 20px; font-weight: 500; }
+.stelli-library-row { display: flex; gap: 10px; align-items: center; padding: 12px 0; border-top: 1px solid rgba(255,255,255,.08); }
+.stelli-library-row i { width: 42px; height: 42px; border-radius: 8px; background: linear-gradient(135deg,#1e2e6e,#ef9b34); }.stelli-library-row:nth-of-type(3) i{background:linear-gradient(135deg,#2e175a,#8a4b1c)}.stelli-library-row:nth-of-type(4) i{background:linear-gradient(135deg,#15285b,#e2c15a)}
+.stelli-library-row b, .stelli-library-row small { display: block; }.stelli-library-row b { color: #e9e7f3; font-size: 13px; font-weight: 500; }.stelli-library-row small { position: static; margin-top: 3px; color: #8f96b6; text-align: left; font-size: 11px; }
+.stelli-product__copy { max-width: 650px; margin: 82px auto 0; text-align: center; }.stelli-eyebrow { margin: 0; color: var(--stelli-gold); font-size: 12px; font-weight: 750; letter-spacing: .17em; }.stelli-product__copy h2, .stelli-discovery h2, .stelli-access h2 { margin: 12px 0 18px; font-size: clamp(38px,4.2vw,60px); line-height: 1.02; }.stelli-product__copy > p:last-child { max-width: 560px; margin: auto; color: #cac8db; font-size: 18px; line-height: 1.6; }
+
+.stelli-story { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 0; padding: 94px max(54px,calc((100vw - 1280px)/2)) 120px; background: #060b20; }.stelli-story-card { min-width: 0; padding: 0 28px; }.stelli-story-card + .stelli-story-card { border-left: 1px solid rgba(234,193,86,.25); }.stelli-story-card__number { display: flex; align-items: center; gap: 13px; margin: 0 0 42px; color: var(--stelli-gold); font-family: Georgia,serif; font-size: 31px; }.stelli-story-card__number::after { content: ""; height: 1px; flex: 1; background: linear-gradient(90deg,var(--stelli-gold),transparent); }.stelli-story-card h2 { margin: 0 0 14px; font-size: 40px; line-height: 1.03; }.stelli-story-card > p:not(.stelli-story-card__number) { min-height: 78px; margin: 0; color: var(--stelli-muted); font-size: 17px; line-height: 1.55; }.stelli-story-card__image { display: block; width: min(100%,410px) !important; height: auto !important; aspect-ratio: 1 / 1; margin: 36px auto 0; overflow: hidden; border: 1px solid rgba(239,180,53,.58); border-radius: 50%; background-position: center; background-size: cover; }.stelli-story-card__image--host { background-image: url("assets/story-host-performance-crop.png"); }.stelli-story-card__image--listen { background-image: url("assets/story-listen-softball-crop.png"); }.stelli-story-card__image--return { background-image: url("assets/story-return-home-crop.png"); }
+.stelli-discovery { display: grid; grid-template-columns: .9fr 1.1fr; gap: 10%; align-items: center; padding: 132px max(54px,calc((100vw - 1180px)/2)); background: radial-gradient(ellipse at 70% 100%,rgba(90,44,156,.42),transparent 55%),#11103a; }.stelli-discovery h2 { margin-bottom: 0; }.stelli-discovery > p { margin: 0; color: #d0cddd; font-size: 20px; line-height: 1.65; }
+.stelli-access { padding: 150px 30px; background: linear-gradient(160deg,#0a0e26,#1d1049); text-align: center; }.stelli-access h2 { max-width: 780px; margin-right: auto; margin-left: auto; }.stelli-footer { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 30px 54px; color: #9e9fb1; background: #050814; font-size: 13px; }.stelli-footer .stelli-brand { font-size: 23px; }.stelli-footer .stelli-brand img { width: 30px; height: 30px; border-radius: 8px; }.stelli-footer__links { display: flex; align-items: center; gap: 20px; }.stelli-footer__links a:hover { color: #fff; }
+
+@media (max-width: 850px) { .page--home .stelli-hero { min-height: 820px; }.stelli-nav { padding: 24px; }.stelli-brand { font-size: 27px; }.stelli-button--nav { display: none; }.stelli-hero__copy { width: auto; margin: 86px 26px 0; }.stelli-hero__copy h1 { font-size: clamp(56px,14vw,78px); }.stelli-hero__copy p { font-size: 20px; }.stelli-hero__scenes img { object-position: 62% center; }.stelli-hero__caption { right: 24px; bottom: 25px; }.stelli-scene-controls { bottom: 25px; left: 24px; }.stelli-product { padding: 75px 22px 68px; }.stelli-phone-cluster { gap: 9px; }.stelli-phone { width: 30%; min-height: 350px; padding: 17px 10px; border-width: 3px; border-radius: 27px; }.stelli-phone--center { width: 36%; min-height: 400px; }.stelli-screen { min-height: 310px; }.stelli-phone--center .stelli-screen { min-height: 356px; }.stelli-screen--moment h2 { font-size: 15px; }.stelli-screen small { font-size: 7px; }.stelli-story { grid-template-columns: 1fr; gap: 58px; padding: 70px 28px; }.stelli-story-card, .stelli-story-card + .stelli-story-card { padding: 0; border: 0; }.stelli-story-card > p:not(.stelli-story-card__number) { min-height: 0; }.stelli-story-card__image { width: min(330px,100%); height: min(330px,calc(100vw - 56px)); }.stelli-discovery { grid-template-columns: 1fr; gap: 25px; padding: 90px 28px; }.stelli-access { padding: 100px 22px; }.stelli-footer { padding: 25px; }.stelli-product__copy h2,.stelli-discovery h2,.stelli-access h2 { font-size: 40px; } }
+
+@media (prefers-reduced-motion: reduce) { .stelli-hero__scenes img { transition: none; } }
