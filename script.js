@@ -16,7 +16,5 @@
 
   controls.forEach((control, index) => control.addEventListener("click", () => show(index)));
 
-  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    window.setInterval(() => show((current + 1) % scenes.length), 6500);
-  }
+  window.setInterval(() => show((current + 1) % scenes.length), 6500);
 })();
