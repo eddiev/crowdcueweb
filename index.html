@@ -3,143 +3,83 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stelli | Coming Soon</title>
-    <meta
-      name="description"
-      content="Stelli is coming soon. Shared audio, together at the same time."
-    />
+    <title>Stelli | Audio Moments, shared with intention</title>
+    <meta name="description" content="Stelli brings people together through audio Moments, shared with intention." />
     <meta name="robots" content="index,follow" />
-    <meta name="theme-color" content="#ececec" />
+    <meta name="theme-color" content="#071027" />
     <link rel="canonical" href="https://stelliapp.com/" />
-
     <link rel="icon" type="image/png" sizes="32x32" href="assets/stelli-logo-web.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="assets/stelli-logo-web.png" />
     <link rel="apple-touch-icon" href="assets/stelli-logo-web.png" />
-
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Stelli" />
-    <meta property="og:title" content="Stelli | Coming Soon" />
-    <meta
-      property="og:description"
-      content="The magic is in the moment. Shared audio, together at the same time."
-    />
+    <meta property="og:title" content="Stelli | The magic is in being together." />
+    <meta property="og:description" content="Audio Moments, shared with intention." />
     <meta property="og:url" content="https://stelliapp.com/" />
-    <meta
-      property="og:image"
-      content="https://stelliapp.com/assets/CrowdCue_swirl_transparent_nograin.png"
-    />
-
+    <meta property="og:image" content="https://stelliapp.com/assets/hero-overlook.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Stelli | Coming Soon" />
-    <meta
-      name="twitter:description"
-      content="The magic is in the moment. Shared audio, together at the same time."
-    />
-    <meta
-      name="twitter:image"
-      content="https://stelliapp.com/assets/CrowdCue_swirl_transparent_nograin.png"
-    />
-
+    <meta name="twitter:title" content="Stelli | The magic is in being together." />
+    <meta name="twitter:description" content="Audio Moments, shared with intention." />
+    <meta name="twitter:image" content="https://stelliapp.com/assets/hero-overlook.png" />
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Stelli",
-        "url": "https://stelliapp.com/",
-        "logo": "https://stelliapp.com/assets/stelli-logo-web.png",
-        "email": "info@crowdcue.live"
-      }
+      {"@context":"https://schema.org","@type":"Organization","name":"Stelli","url":"https://stelliapp.com/","logo":"https://stelliapp.com/assets/stelli-logo-web.png","email":"info@crowdcue.live"}
     </script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260724-1440" />
   </head>
   <body class="page page--home">
-    <div class="background"></div>
-
-    <header class="topbar">
-      <a class="brand" href="index.html" aria-label="Stelli home">
-        <img
-          class="brand__mark"
-          src="assets/stelli-logo-web.png"
-          alt=""
-          aria-hidden="true"
-          width="28"
-          height="28"
-        />
-        <span class="brand__text">Stelli</span>
-      </a>
-      <a class="button button--primary" href="contact.html">Request Access</a>
-    </header>
-
-    <main class="home-main">
-      <section class="hero" aria-label="Coming soon">
-        <div class="swirl-stage" id="swirl-stage">
-          <div class="swirl-wrap" aria-hidden="true">
-            <img
-              class="swirl"
-              src="assets/CrowdCue_swirl_transparent_nograin.png"
-              alt=""
-              width="1024"
-              height="1024"
-            />
-          </div>
-
-          <img
-            class="avatar avatar--one"
-            src="assets/pet-1-avatar.png"
-            alt="Pet guest avatar"
-            width="160"
-            height="160"
-            loading="eager"
-          />
-          <img
-            class="avatar avatar--two"
-            src="assets/male-1-avatar.png"
-            alt="Male guest avatar"
-            width="160"
-            height="160"
-            loading="eager"
-          />
-          <img
-            class="avatar avatar--three"
-            src="assets/grandparent-avatar.png"
-            alt="Grandparent guest avatar"
-            width="160"
-            height="160"
-            loading="eager"
-          />
-          <img
-            class="avatar avatar--four"
-            src="assets/female-2-avatar.png"
-            alt="Female guest avatar"
-            width="160"
-            height="160"
-            loading="eager"
-          />
-          <img
-            class="avatar avatar--five"
-            src="assets/hiker-1-avatar.png"
-            alt="Female guest avatar"
-            width="160"
-            height="160"
-            loading="eager"
-          />
-          <img
-            class="avatar avatar--six"
-            src="assets/teen-1-avatar.png"
-            alt="Teen guest avatar"
-            width="160"
-            height="160"
-            loading="eager"
-          />
-
-          <div class="hero-copy" id="hero-copy">
-            <h1>The magic is in the moment</h1>
-            <p>Shared audio, together at the same time.</p>
-          </div>
+    <main>
+      <section class="stelli-hero" id="top" aria-label="Stelli introduction">
+        <div class="stelli-hero__scenes" aria-hidden="true">
+          <img class="is-active" src="assets/hero-overlook.png" alt="" />
+          <img src="assets/hero-ballpark.png" alt="" />
+          <img src="assets/hero-museum.png" alt="" />
+          <div class="stelli-hero__shade"></div>
+        </div>
+        <header class="stelli-nav">
+          <a class="stelli-brand" href="#top" aria-label="Stelli home">
+            <img src="assets/stelli-logo-web.png" alt="" aria-hidden="true" width="40" height="40" />
+            <span>Stelli</span>
+          </a>
+          <a class="stelli-button stelli-button--nav" href="contact.html">Request access</a>
+        </header>
+        <div class="stelli-hero__copy">
+          <h1>The magic is<br />in being together.</h1>
+          <div class="stelli-accent-rule" aria-hidden="true"><span></span></div>
+          <p>Audio Moments, shared<br />with intention.</p>
+          <a class="stelli-button" href="contact.html">Request access</a>
+        </div>
+        <p class="stelli-hero__caption" aria-live="polite">Friends at sunset</p>
+        <div class="stelli-scene-controls" aria-label="Hero scenes">
+          <button class="is-current" type="button" aria-label="Show friends at sunset"></button>
+          <button type="button" aria-label="Show a shared game"></button>
+          <button type="button" aria-label="Show a guided place"></button>
         </div>
       </section>
-    </main>
 
+      <section class="stelli-product" aria-labelledby="product-heading">
+        <div class="stelli-phone-cluster" aria-label="Stelli app previews">
+          <img class="stelli-phone stelli-phone--left" src="assets/slot_1.png" alt="Stelli Moment host dashboard" />
+          <img class="stelli-phone stelli-phone--center" src="assets/slot_2.png" alt="Stelli Home screen" />
+          <img class="stelli-phone stelli-phone--right" src="assets/slot_3.png" alt="Stelli Clip Library" />
+        </div>
+        <div class="stelli-product__copy">
+          <p class="stelli-eyebrow">AUDIO MOMENTS</p>
+          <h2 id="product-heading">A shared experience, remembered in sound.</h2>
+          <p>Stelli gives Hosts a place to shape an audio Moment, bring people into it, and return to the clips that made it meaningful.</p>
+        </div>
+      </section>
+
+      <section class="stelli-story" aria-label="How Stelli works">
+        <article class="stelli-story-card"><p class="stelli-story-card__number">01</p><h2>Host a Moment.</h2><p>Create a private audio Moment around a time, place, and the people you want to include.</p><div class="stelli-story-card__image stelli-story-card__image--host" role="img" aria-label="Friends gathered at an outdoor performance"></div></article>
+        <article class="stelli-story-card"><p class="stelli-story-card__number">02</p><h2>Listen together.</h2><p>Share selected clips in sync, aloud through your devices or privately with headphones.</p><div class="stelli-story-card__image stelli-story-card__image--listen" role="img" aria-label="Friends at a child’s softball game"></div></article>
+        <article class="stelli-story-card"><p class="stelli-story-card__number">03</p><h2>Return to it.</h2><p>Revisit the voices, atmosphere, and small details that make the Moment last.</p><div class="stelli-story-card__image stelli-story-card__image--return" role="img" aria-label="A person revisiting an audio Moment at home"></div></article>
+      </section>
+
+      <section class="stelli-discovery" aria-labelledby="discovery-heading"><div><p class="stelli-eyebrow">DISCOVERY</p><h2 id="discovery-heading">A place can hold a story.</h2></div><p>Hosts can make a curated audio Moment discoverable to followers who are present in a location that matters to it. People can listen at their own pace, through a perspective they trust.</p></section>
+
+      <section class="stelli-access" aria-labelledby="access-heading"><p class="stelli-eyebrow">STELLI IS COMING</p><h2 id="access-heading">Be among the first to listen together.</h2><a class="stelli-button" href="contact.html">Request access</a></section>
+    </main>
+    <footer class="stelli-footer"><a class="stelli-brand" href="#top"><img src="assets/stelli-logo-web.png" alt="" aria-hidden="true" width="30" height="30" /><span>Stelli</span></a><div class="stelli-footer__links"><a href="privacypolicy.html">Privacy Policy</a><span>© 2026 Stelli</span></div></footer>
     <script src="script.js"></script>
   </body>
 </html>

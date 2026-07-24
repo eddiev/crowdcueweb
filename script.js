@@ -1,22 +1,22 @@
 (() => {
-  const isHome = document.body.classList.contains("page--home");
-  if (!isHome) return;
+  const scenes = [...document.querySelectorAll(".stelli-hero__scenes img")];
+  const controls = [...document.querySelectorAll(".stelli-scene-controls button")];
+  const caption = document.querySelector(".stelli-hero__caption");
+  const labels = ["Friends at sunset", "A shared game", "A guided place"];
 
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (reduced) {
-    document.body.classList.add("stage-swirl", "stage-avatars", "stage-copy");
-    return;
+  if (!scenes.length) return;
+
+  let current = 0;
+  const show = (index) => {
+    current = index;
+    scenes.forEach((scene, sceneIndex) => scene.classList.toggle("is-active", sceneIndex === index));
+    controls.forEach((control, controlIndex) => control.classList.toggle("is-current", controlIndex === index));
+    if (caption) caption.textContent = labels[index];
+  };
+
+  controls.forEach((control, index) => control.addEventListener("click", () => show(index)));
+
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    window.setInterval(() => show((current + 1) % scenes.length), 6500);
   }
-
-  window.addEventListener("load", () => {
-    document.body.classList.add("stage-swirl");
-
-    window.setTimeout(() => {
-      document.body.classList.add("stage-avatars");
-    }, 1150);
-
-    window.setTimeout(() => {
-      document.body.classList.add("stage-copy");
-    }, 1860);
-  });
 })();
