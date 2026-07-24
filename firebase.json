@@ -39,6 +39,18 @@
     ],
     "rewrites": [
       {
+        "source": "/privacypolicy",
+        "destination": "/privacypolicy.html"
+      },
+      {
+        "source": "/termsofservice",
+        "destination": "/termsofservice.html"
+      },
+      {
+        "source": "/communityguidelines",
+        "destination": "/communityguidelines.html"
+      },
+      {
         "source": "/e/**",
         "destination": "/invite.html"
       }
