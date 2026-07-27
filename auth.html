@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#071027" />
+    <title>Account action | Stelli</title>
+    <link rel="icon" type="image/png" href="assets/stelli-logo-web.png" />
+    <style>
+      :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; }
+      body { align-items: center; background: #f5f5f7; color: #0b1215; display: flex; justify-content: center; margin: 0; min-height: 100vh; padding: 24px; }
+      main { background: #fff; border: 1px solid #e3e3e8; border-radius: 24px; box-shadow: 0 16px 48px rgba(11,18,21,.10); box-sizing: border-box; max-width: 460px; padding: 40px 32px; text-align: center; width: 100%; }
+      img { height: 44px; margin-bottom: 18px; width: 44px; }
+      h1 { font-size: 30px; letter-spacing: -.6px; margin: 0 0 12px; }
+      p { color: #5f6671; font-size: 17px; line-height: 1.45; margin: 0; }
+      form { display: grid; gap: 12px; margin-top: 24px; text-align: left; }
+      input, button { border-radius: 12px; box-sizing: border-box; font: inherit; min-height: 48px; width: 100%; }
+      input { border: 1px solid #cfd2d8; padding: 0 14px; }
+      button { background: #ffcc00; border: 0; color: #0b1215; cursor: pointer; font-weight: 700; padding: 0 16px; }
+      [hidden] { display: none; }
+      .error { color: #b3261e; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="assets/stelli-logo-web.png" alt="Stelli" />
+      <h1 id="heading">Checking your link</h1>
+      <p id="message" aria-live="polite">Please wait a moment.</p>
+      <form id="reset-form" hidden>
+        <label for="password">New password</label>
+        <input id="password" name="password" type="password" minlength="8" autocomplete="new-password" required />
+        <button type="submit">Reset password</button>
+      </form>
+    </main>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+      import { applyActionCode, confirmPasswordReset, getAuth, verifyPasswordResetCode } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
+
+      const app = initializeApp({ apiKey: "AIzaSyAH2gVUjB5Vg_ONahd86kvWrBBRIx4Qqus", authDomain: "crowdcue-775b5.firebaseapp.com", projectId: "crowdcue-775b5" });
+      const auth = getAuth(app);
+      const params = new URLSearchParams(window.location.search);
+      const mode = params.get("mode");
+      const oobCode = params.get("oobCode");
+      const heading = document.querySelector("#heading");
+      const message = document.querySelector("#message");
+      const resetForm = document.querySelector("#reset-form");
+
+      function showError() {
+        heading.textContent = "This link can’t be used";
+        message.className = "error";
+        message.textContent = "It may have expired or already been used. Return to Stelli and request a new email.";
+      }
+
+      if (!mode || !oobCode) {
+        showError();
+      } else if (mode === "resetPassword") {
+        try {
+          await verifyPasswordResetCode(auth, oobCode);
+          heading.textContent = "Choose a new password";
+          message.textContent = "Use at least 8 characters, including a letter and a number.";
+          resetForm.hidden = false;
+          resetForm.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const password = document.querySelector("#password").value;
+            if (password.length < 8 || !/[A-Za-z]/.test(password) || !/\\d/.test(password)) {
+              message.className = "error";
+              message.textContent = "Use at least 8 characters, including a letter and a number.";
+              return;
+            }
+            try {
+              await confirmPasswordReset(auth, oobCode, password);
+              resetForm.hidden = true;
+              heading.textContent = "Password updated";
+              message.className = "";
+              message.textContent = "You can return to Stelli and sign in with your new password.";
+            } catch { showError(); }
+          });
+        } catch { showError(); }
+      } else if (mode === "verifyEmail" || mode === "recoverEmail") {
+        try {
+          await applyActionCode(auth, oobCode);
+          heading.textContent = mode === "verifyEmail" ? "Email verified" : "Email restored";
+          message.textContent = mode === "verifyEmail" ? "Your Stelli account is ready to use." : "Your sign-in email has been restored.";
+        } catch { showError(); }
+      } else {
+        showError();
+      }
+    </script>
+  </body>
+</html>

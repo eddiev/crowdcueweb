@@ -51,6 +51,10 @@
         "destination": "/communityguidelines.html"
       },
       {
+        "source": "/auth",
+        "destination": "/auth.html"
+      },
+      {
         "source": "/e/**",
         "destination": "/invite.html"
       }
