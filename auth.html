@@ -37,7 +37,11 @@
       import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
       import { applyActionCode, confirmPasswordReset, getAuth, verifyPasswordResetCode } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
 
-      const app = initializeApp({ apiKey: "AIzaSyAH2gVUjB5Vg_ONahd86kvWrBBRIx4Qqus", authDomain: "crowdcue-775b5.firebaseapp.com", projectId: "crowdcue-775b5" });
+      const firebaseConfigResponse = await fetch("/__/firebase/init.json");
+      if (!firebaseConfigResponse.ok) {
+        throw new Error("Unable to load Firebase configuration.");
+      }
+      const app = initializeApp(await firebaseConfigResponse.json());
       const auth = getAuth(app);
       const params = new URLSearchParams(window.location.search);
       const mode = params.get("mode");
