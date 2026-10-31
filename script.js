@@ -62,7 +62,7 @@
     if (!Object.hasOwn(names, slug) || !dialog || !video) return;
     trigger = button;
     document.querySelector('#demo-title').textContent = names[slug];
-    const revision = slug === 'ball-game' ? '?v=9-20261031' : '';
+    const revision = slug === 'ball-game' ? '?v=9-20261031' : slug === 'wedding-remote' ? '?v=4-james-20261031' : '';
     video.src = `assets/demos/${slug}.mp4${revision}`; video.poster = `assets/demos/${slug}.webp`;
     video.setAttribute('aria-label', `${names[slug]} Stelli demonstration`);
     dialog.showModal(); document.body.classList.add('dialog-open');

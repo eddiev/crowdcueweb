@@ -21,12 +21,13 @@
     "treatment": "720p web encoding; approved edit and audio preserved; brand ending only"
   },
   "wedding-remote": {
-    "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/wedding-remote-v3/exports/Stelli-Wedding-Remote-v3-brand-FINAL.mp4",
-    "sourceSHA256": "1bed9f246963cd8f87d73999154f6594e97bdd9055a62d2d2df59c8f37d99dbe",
-    "webSHA256": "30f4e1850422bd4a64cb90fc2ac7591299a41fda7ebb733f52987554b7432427",
-    "treatment": "720p web encoding; approved edit preserved and audio stream copied without re-encoding",
+    "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/wedding-remote-v4-voice-auditions/exports/Stelli-Wedding-Remote-v4-James-brand-FINAL.mp4",
+    "sourceSHA256": "5d1cb76daf97056d609f1476022ec6b1b93c610bd47ae249eddee9c9ea8adda1",
+    "webSHA256": "95d1b01dd984cf589ceaa38bf82263ec5e094bcb0cd776991e3a56652024885e",
+    "treatment": "Approved James officiant audio copied without re-encoding; existing approved 720p video stream copied unchanged",
     "approvedDate": "2026-10-31",
-    "approvalRecord": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/wedding-remote-v3/APPROVED_FINAL.json"
+    "approvalRecord": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/wedding-remote-v4-voice-auditions/APPROVED_FINAL.json",
+    "webURL": "assets/demos/wedding-remote.mp4?v=4-james-20261031"
   },
   "discover-museum": {
     "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/discover-museum-v5/exports/Stelli-Discover-Museum-v5-brand-FINAL.mp4",
