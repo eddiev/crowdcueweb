@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stelli | Audio Moments, made personal</title>
-    <meta name="description" content="Stelli helps people create and share audio Moments shaped by the people in them—no AI narrator required." />
+    <title>Stelli | Create. Invite. Cue the Moment.</title>
+    <meta name="description" content="Create a Moment, invite your guests, and cue audio clips across their phones—in sync." />
     <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#071027" />
     <link rel="canonical" href="https://stelliapp.com/" />
@@ -13,81 +13,75 @@
     <link rel="apple-touch-icon" href="assets/stelli-logo-web.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Stelli" />
-    <meta property="og:title" content="Stelli | Audio Moments, made personal." />
-    <meta property="og:description" content="Create and share audio Moments shaped by the people in them—no AI narrator required." />
+    <meta property="og:title" content="Stelli | Create. Invite. Cue the Moment.." />
+    <meta property="og:description" content="Bring your people together with sound. Create a Moment, invite your guests, and cue the right clip." />
     <meta property="og:url" content="https://stelliapp.com/" />
     <meta property="og:image" content="https://stelliapp.com/assets/hero-overlook.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Stelli | Audio Moments, made personal." />
-    <meta name="twitter:description" content="Create and share audio Moments shaped by the people in them—no AI narrator required." />
+    <meta name="twitter:title" content="Stelli | Create. Invite. Cue the Moment.." />
+    <meta name="twitter:description" content="Bring your people together with sound. Create a Moment, invite your guests, and cue the right clip." />
     <meta name="twitter:image" content="https://stelliapp.com/assets/hero-overlook.png" />
     <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"Organization","name":"Stelli","url":"https://stelliapp.com/","logo":"https://stelliapp.com/assets/stelli-logo-web.png","email":"info@crowdcue.live"}
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260724-1630" />
+    <link rel="stylesheet" href="styles.css?v=20261030-launch" />
   </head>
   <body class="page page--home">
-    <main>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <main id="main-content">
       <section class="stelli-hero" id="top" aria-label="Stelli introduction">
         <div class="stelli-hero__scenes" aria-hidden="true">
-          <img class="is-active" src="assets/hero-overlook.png" alt="" />
+          <img class="is-active" src="assets/hero-overlook.png" alt="" fetchpriority="high" />
           <img src="assets/hero-ballpark-v3.png" alt="" />
           <img src="assets/hero-museum-v4.png" alt="" />
           <div class="stelli-hero__shade"></div>
         </div>
         <header class="stelli-nav">
-          <a class="stelli-brand" href="#top" aria-label="Stelli home">
-            <img src="assets/stelli-logo-web.png" alt="" aria-hidden="true" width="40" height="40" />
-            <span>Stelli</span>
-          </a>
-          <a class="stelli-button stelli-button--nav" href="contact.html">Request access</a>
+          <a class="stelli-brand" href="#top" aria-label="Stelli home"><img src="assets/stelli-logo-web.png" alt="" width="40" height="40" /><span>Stelli</span></a>
+          <a class="stelli-button stelli-button--nav" href="#launch">Get launch updates</a>
         </header>
         <div class="stelli-hero__copy">
-          <h1>The magic is<br />in the moment.</h1>
+          <p class="stelli-eyebrow">SHARED AUDIO. SHARED EXPERIENCE.</p>
+          <h1><span>Create.</span><span>Invite.</span><span>Cue the Moment.</span></h1>
           <div class="stelli-accent-rule" aria-hidden="true"><span></span></div>
-          <p>Shared audio, shaped by the people<br />in the moment.</p>
+          <p>Bring your people together with sound. Create a Moment, invite your guests, and cue audio clips across their phones—in sync.</p>
+          <div class="hero-actions"><a class="stelli-button" href="#demos">Watch a demo</a><a class="text-link" href="#how-it-works">See how it works</a></div>
         </div>
-        <p class="stelli-hero__caption" aria-live="polite">Friends at sunset</p>
+        <p class="stelli-hero__caption">Friends at sunset</p>
         <div class="stelli-scene-controls" aria-label="Hero scenes">
-          <button class="is-current" type="button" aria-label="Show friends at sunset"></button>
-          <button type="button" aria-label="Show a shared game"></button>
-          <button type="button" aria-label="Show a guided place"></button>
+          <button class="is-current" type="button" aria-label="Show friends at sunset" aria-pressed="true"><span></span></button>
+          <button type="button" aria-label="Show a shared game" aria-pressed="false"><span></span></button>
+          <button type="button" aria-label="Show a guided place" aria-pressed="false"><span></span></button>
+          <button class="scene-pause" type="button" aria-label="Pause changing scenes">Pause</button>
         </div>
       </section>
-
-      <section class="stelli-product" aria-labelledby="product-heading">
-        <div class="stelli-product__copy">
-          <p class="stelli-eyebrow">AUDIO MOMENTS</p>
-          <h2 id="product-heading">A Moment, made personal by the people in it.</h2>
-          <p>Stelli is built around real perspective. The jokes, introductions, cheers, memories, and sounds that belong to a time and place stay human and personal. There is no AI narrator standing in for your perspective—just the people who experienced the Moment and chose to share it.</p>
+      <section class="stelli-demos section-pad" id="demos" aria-labelledby="demos-heading">
+        <div class="section-heading"><p class="stelli-eyebrow">SEE IT IN ACTION</p><h2 id="demos-heading">A Moment starts with your people.</h2><p>Different places. Different sounds. The same simple way to bring everyone in.</p></div>
+        <div class="demo-grid">
+          <article class="demo-card"><button class="demo-poster" data-demo="sunset-sessions" aria-haspopup="dialog" aria-controls="demo-player" aria-label="Watch Sunset Sessions demo"><img src="assets/demos/sunset-sessions.webp" alt="Four phones sharing a Moment on a woven camp blanket" width="540" height="960" loading="lazy" /><span>Watch demo <small>38 seconds · Sound on</small></span></button><div class="demo-copy"><p class="stelli-eyebrow">SUNSET SESSIONS</p><h3>Your friends. Your soundtrack.</h3><p>Gather somewhere good. Cue a sound that brings you together.</p></div></article>
+          <article class="demo-card"><button class="demo-poster" data-demo="ball-game" aria-haspopup="dialog" aria-controls="demo-player" aria-label="Watch Ball Game demo"><img src="assets/demos/ball-game.webp" alt="Four phones on ballpark bleachers ready for a shared cheer" width="540" height="960" loading="lazy" /><span>Watch demo <small>39 seconds · Sound on</small></span></button><div class="demo-copy"><p class="stelli-eyebrow">BALL GAME</p><h3>Give your team a shared cheer.</h3><p>Bring your fellow fans into the Moment. Cue it when it counts.</p></div></article>
+          <article class="demo-card"><button class="demo-poster" data-demo="game-night" aria-haspopup="dialog" aria-controls="demo-player" aria-label="Watch Game Night demo"><img src="assets/demos/game-night.webp" alt="Two phones beside dice and a dragon miniature on a game table" width="540" height="960" loading="lazy" /><span>Watch demo <small>33 seconds · Sound on</small></span></button><div class="demo-copy"><p class="stelli-eyebrow">GAME NIGHT</p><h3>Set the scene. Then surprise them.</h3><p>A little atmosphere. A perfectly timed arrival. Let sound tell part of the story.</p></div></article>
         </div>
-        <div class="stelli-phone-cluster" aria-label="Stelli app previews">
-          <img class="stelli-phone stelli-phone--left" src="assets/slot_1.png" alt="Stelli Moment host dashboard" />
-          <img class="stelli-phone stelli-phone--center" src="assets/slot_2.png" alt="Stelli Home screen" />
-          <img class="stelli-phone stelli-phone--right" src="assets/slot_3.png" alt="Stelli Clip Library" />
-        </div>
+        <p class="demo-note">One clip. Everyone in sync. Your Moment can include more than the phones shown here.</p>
+        <noscript><p class="no-script-links">Watch the demos: <a href="assets/demos/sunset-sessions.mp4">Sunset Sessions</a> · <a href="assets/demos/ball-game.mp4">Ball Game</a> · <a href="assets/demos/game-night.mp4">Game Night</a></p></noscript>
       </section>
-
-      <section class="stelli-story" aria-label="How Stelli works">
-        <article class="stelli-story-card"><p class="stelli-story-card__number">01</p><h2>Host a Moment.</h2><p>Start with the occasion: a game, a gathering, a family tradition, a walk through a favorite place. Keep it private, then invite guests with a direct link or Moment code. Your Clip Library is where the sounds you record or bring in are ready to use.</p><div class="stelli-story-card__image stelli-story-card__image--host" role="img" aria-label="Friends gathered at an outdoor performance"></div></article>
-        <article class="stelli-story-card"><p class="stelli-story-card__number">02</p><h2>Listen together.</h2><p>Set the order, choose the next clip, and lead the experience from your phone. Guests join the same Moment and follow along as it plays—whether everyone is gathered around a speaker or listening on headphones in the same place.</p><div class="stelli-story-card__image stelli-story-card__image--listen" role="img" aria-label="Friends at a child’s softball game"></div></article>
-        <article class="stelli-story-card"><p class="stelli-story-card__number">03</p><h2>Return to it.</h2><p>A Moment is more than a queue. It holds the voices, atmosphere, music, and small details that gave an occasion its feeling. Revisit those clips later, keep building your library, or shape a new Moment from what matters to you.</p><div class="stelli-story-card__image stelli-story-card__image--return" role="img" aria-label="A person revisiting an audio Moment at home"></div></article>
-      </section>
-
-      <section class="stelli-discovery" aria-labelledby="discovery-heading">
-        <figure class="stelli-discovery__field" aria-hidden="true">
-          <img src="assets/discovery-constellation-map.png" alt="" />
-        </figure>
-        <div class="stelli-discovery__copy">
-          <p class="stelli-eyebrow">DISCOVER</p>
-          <h2 id="discovery-heading">A place can hold<br />a story.</h2>
-          <p>Discover is an optional way for a Host to open a curated Moment beyond the guest list. Choose a named location and the area around it, then make the Moment available to signed-in Stelli listeners who are there. Followers can be notified when it goes live, and each listener can move through the recorded playlist at their own pace.</p>
+      <section class="stelli-how section-pad" id="how-it-works" aria-labelledby="how-heading">
+        <div class="section-heading"><p class="stelli-eyebrow">THREE SIMPLE STEPS</p><h2 id="how-heading">You choose the sound.<br />You cue the Moment.</h2></div>
+        <div class="how-grid">
+          <article class="how-card"><p class="step-number">01</p><h3>Create.</h3><p>Name your Moment and add the sounds you want to share.</p><img src="assets/demos/how-create.webp" alt="Native Stelli setup showing the Sunset Sessions Moment name" width="720" height="540" loading="lazy" /></article>
+          <article class="how-card"><p class="step-number">02</p><h3>Invite.</h3><p>Share the Moment code so your guests can join.</p><img src="assets/demos/how-invite.webp" alt="Stelli Host menu with Copy Moment Code" width="720" height="540" loading="lazy" /></article>
+          <article class="how-card"><p class="step-number">03</p><h3>Cue the Moment.</h3><p>Choose a clip. Everyone in the Moment hears it in sync.</p><img src="assets/demos/how-cue.webp" alt="Golden Hour in the Host’s native Stelli playlist" width="720" height="540" loading="lazy" /></article>
         </div>
       </section>
-
-      <section class="stelli-access" aria-labelledby="access-heading"><p class="stelli-eyebrow">STELLI IS COMING</p><h2 id="access-heading">Be among the first to listen&nbsp;together.</h2><a class="stelli-button" href="contact.html">Request access</a></section>
+      <section class="stelli-sounds section-pad" aria-labelledby="sounds-heading"><div><p class="stelli-eyebrow">YOUR CLIP LIBRARY</p><h2 id="sounds-heading">Start with a sound<br />that means something.</h2></div><div class="sounds-copy"><p>Record a cheer, an introduction, a little atmosphere, or something only your friends will understand. Save it in your Clip Library and add it to a Moment when you’re ready.</p><p>Already have a clip? You can import audio too. Arrange your playlist, choose the next clip, and lead the experience from your phone.</p><p class="sounds-detail">Guests listen on their own phones, aloud together or with headphones.</p></div></section>
+      <section class="stelli-discovery" id="discover" aria-labelledby="discovery-heading"><figure class="stelli-discovery__field" aria-hidden="true"><img src="assets/discovery-constellation-map.png" alt="" loading="lazy" /></figure><div class="stelli-discovery__copy"><p class="stelli-eyebrow">DISCOVER</p><h2 id="discovery-heading">Let a place<br />tell its story.</h2><p>Hosts can make a curated audio Moment available at a chosen location. Signed-in Stelli listeners within its location area can explore the clips at their own pace.</p><p>Following the Host isn’t required to discover or listen. It’s another way to experience the sounds and perspectives connected to a place.</p></div></section>
+      <section class="stelli-access" id="launch" aria-labelledby="access-heading"><p class="stelli-eyebrow">STELLI IS COMING</p><h2 id="access-heading">Be there for the<br />first Moment.</h2><p class="access-intro">Get an email when Stelli is ready to launch.</p>
+        <form class="launch-form" method="post" action="/api/launch-updates" data-launch-form data-source="homepage"><label for="launch-email">Email address</label><div class="launch-form__row"><input id="launch-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required /><button class="stelli-button" type="submit">Get launch updates</button></div><div class="form-trap" aria-hidden="true"><label>Website<input name="website" type="text" tabindex="-1" autocomplete="off" /></label></div><p class="signup-disclosure">By signing up, you agree to receive Stelli launch updates. We’ll use your email for these updates. To leave the list, email <a href="mailto:support@stelliapp.com">support@stelliapp.com</a>. <a href="privacypolicy.html">Privacy Policy</a></p><p class="form-status" role="status" aria-live="polite"></p></form>
+        <p class="beta-link">Interested in helping us test? <a href="mailto:support@stelliapp.com?subject=Stelli%20beta%20access">Request beta access</a></p><noscript><p>Email <a href="mailto:support@stelliapp.com?subject=Stelli%20launch%20updates">support@stelliapp.com</a> to request launch updates.</p></noscript>
+      </section>
     </main>
-    <footer class="stelli-footer"><a class="stelli-brand" href="#top"><img src="assets/stelli-logo-web.png" alt="" aria-hidden="true" width="30" height="30" /><span>Stelli</span></a><div class="stelli-footer__links"><a href="privacypolicy.html">Privacy Policy</a><a href="termsofservice.html">Terms of Service</a><span>© 2026 Stellation LLC</span></div></footer>
-    <script src="script.js?v=20260724-1528"></script>
+    <footer class="stelli-footer"><a class="stelli-brand" href="#top"><img src="assets/stelli-logo-web.png" alt="" width="30" height="30" /><span>Stelli</span></a><div class="stelli-footer__links"><a href="privacypolicy.html">Privacy Policy</a><a href="termsofservice.html">Terms of Service</a><a href="mailto:support@stelliapp.com">Contact</a><span>© 2026 Stellation LLC</span></div></footer>
+    <dialog id="demo-player" class="demo-dialog" aria-labelledby="demo-title"><div class="demo-dialog__bar"><h2 id="demo-title">Stelli demo</h2><button type="button" class="demo-close" aria-label="Close demo">Close</button></div><video controls playsinline preload="none" aria-label="Stelli product demonstration"></video><p class="demo-dialog__note">Audio is part of the experience. Use the player’s sound controls.</p></dialog>
+    <script src="script.js?v=20261030-launch" defer></script><script src="signup.js?v=20261030-launch" defer></script>
   </body>
 </html>

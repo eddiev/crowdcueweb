@@ -1,0 +1,20 @@
+{
+  "game-night": {
+    "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/dnd-pilot-v10/exports/Stelli-DnD-v10-brand-REVIEW.mp4",
+    "sourceSHA256": "47ead0c011465fb739f852ed196f3939c52025995f9b3566535c99b2b23a4623",
+    "webSHA256": "21b5287e909800a5bc3f02c48d5c9f9deb85706593c9ebcce419abadcd04e9da",
+    "treatment": "720p web encoding; approved edit and audio preserved; brand ending only"
+  },
+  "ball-game": {
+    "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/baseball-v5/exports/Stelli-Baseball-v5-brand-REVIEW.mp4",
+    "sourceSHA256": "53dae1da9041d385dcd8a94f1126c392f65c467b8e5390f7fa670797de30d0cf",
+    "webSHA256": "d80929b02779a62fd01d85d9dd92e13b0f6880e747feeacf0ea34253a09f0637",
+    "treatment": "720p web encoding; approved edit and audio preserved; brand ending only"
+  },
+  "sunset-sessions": {
+    "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/sunset-sessions-v4/exports/Stelli-Sunset-Sessions-v4-brand-REVIEW.mp4",
+    "sourceSHA256": "708cd86e8e313b17dd7388c979e4632672dafa0867c4b6e9a0c1f50edc92b81b",
+    "webSHA256": "856e4012c4cceac1bda9a6101bafe96248eaba5e5d3a0124d6d87bf3ac6ab050",
+    "treatment": "720p web encoding; approved edit and audio preserved; brand ending only"
+  }
+}

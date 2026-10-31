@@ -754,3 +754,141 @@ img.stelli-phone { display: block; min-height: 0; height: auto; padding: 0; aspe
 @media (max-width: 850px) { .page--home .stelli-hero { min-height: 820px; }.stelli-nav { padding: 24px; }.stelli-brand { font-size: 27px; }.stelli-button--nav { display: none; }.stelli-hero__copy { right: 26px; left: 26px; width: auto; margin: 0; }.stelli-hero__copy h1 { font-size: clamp(56px,14vw,78px); }.stelli-hero__copy p { font-size: 20px; }.stelli-hero__scenes img { object-position: 62% center; }.stelli-hero__caption { right: 24px; bottom: 25px; }.stelli-scene-controls { bottom: 25px; left: 24px; }.stelli-product { padding: 75px 22px 68px; }.stelli-phone-cluster { gap: 9px; }.stelli-phone { width: 30%; min-height: 350px; padding: 17px 10px; border-width: 3px; border-radius: 27px; }.stelli-phone--center { width: 36%; min-height: 400px; }.stelli-screen { min-height: 310px; }.stelli-phone--center .stelli-screen { min-height: 356px; }.stelli-screen--moment h2 { font-size: 15px; }.stelli-screen small { font-size: 7px; }.stelli-story { grid-template-columns: 1fr; gap: 58px; padding: 70px 28px; }.stelli-story-card, .stelli-story-card + .stelli-story-card { padding: 0; border: 0; }.stelli-story-card > p:not(.stelli-story-card__number) { min-height: 0; }.stelli-story-card__image { width: min(330px,100%); height: min(330px,calc(100vw - 56px)); }.stelli-discovery { display: flex; align-items: flex-start; min-height: 720px; padding: 90px 28px; }.stelli-discovery::before { background: linear-gradient(180deg,rgba(17,16,58,.98) 0%,rgba(17,16,58,.88) 42%,rgba(17,16,58,.28) 100%); }.stelli-discovery__field img { object-position: 62% center; }.stelli-access { padding: 100px 22px; }.stelli-footer { padding: 25px; }.stelli-product__copy h2,.stelli-discovery h2,.stelli-access h2 { font-size: 40px; } }
 
 @media (prefers-reduced-motion: reduce) { .stelli-hero__scenes img { transition: none; } }
+
+/* Pre-launch homepage: approved demo stories, clear controls, current native UI. */
+html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+.skip-link { position: fixed; top: -100px; left: 16px; z-index: 20; padding: 12px 20px; background: #ffc400; color: #081215; border-radius: 8px; }
+.skip-link:focus { top: 12px; }
+:focus-visible { outline: 3px solid #c9acff; outline-offset: 5px; }
+.stelli-button { color: #151020; border: 1px solid transparent; cursor: pointer; font-weight: 700; }
+.stelli-button:hover { color: #151020; background: #ffdc72; }
+.stelli-button:disabled { opacity: .65; cursor: wait; }
+.page--home .stelli-hero { min-height: 900px; }
+.stelli-hero__copy { width: min(790px,66vw); top: 49%; }
+.stelli-hero__copy h1 { font-size: clamp(64px,7.2vw,104px); line-height: 1.03; letter-spacing: -.05em; }
+.stelli-hero__copy h1 span { display: block; }
+.stelli-hero__copy > .stelli-eyebrow { margin-bottom: 22px; font-size: 12px; color: #f7cf77; font-weight: 750; letter-spacing: .14em; }
+.stelli-hero__copy > p:not(.stelli-eyebrow) { max-width: 560px; font-size: 22px; line-height: 1.5; letter-spacing: -.015em; margin-bottom: 28px; color: #f4e8df; }
+.stelli-accent-rule { margin: 26px 0 22px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; }
+.text-link { font-size: 16px; text-decoration: underline; text-underline-offset: 5px; color: #f7f1e7; }
+.stelli-scene-controls { align-items: center; bottom: 34px; gap: 8px; }
+.stelli-scene-controls button { width: 40px; height: 44px; display: grid; place-items: center; background: transparent; }
+.stelli-scene-controls button span { display: block; width: 32px; height: 3px; background: #b7b5c1; }
+.stelli-scene-controls button.is-current { background: transparent; }
+.stelli-scene-controls button.is-current span { background: #f7cf77; }
+.stelli-scene-controls .scene-pause { width: auto; padding: 0 14px; color: #f7f1e7; font-size: 13px; border: 1px solid #8a8299; border-radius: 30px; margin-left: 8px; }
+.stelli-hero__caption { bottom: 49px; }
+.section-pad { padding: 100px max(32px,calc((100vw - 1240px)/2)); }
+.section-heading { max-width: 760px; margin: 0 auto 48px; text-align: center; }
+.section-heading h2, .stelli-sounds h2 { margin: 16px 0 20px; font: 400 clamp(38px,4.2vw,58px)/1.08 Georgia,serif; letter-spacing: -.045em; }
+.section-heading > p:last-child { color: #cecadb; font-size: 19px; line-height: 1.6; }
+.stelli-demos { background: radial-gradient(ellipse at 50% 12%,#30205e 0%,transparent 55%),#0b102b; }
+.demo-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; max-width: 1120px; margin: auto; }
+.demo-card { min-width: 0; }
+.demo-poster { position: relative; display: block; width: 100%; padding: 0; border: 1px solid #777083; border-radius: 22px; overflow: hidden; background: #111425; text-align: left; cursor: pointer; }
+.demo-poster img { display: block; width: 100%; height: auto; aspect-ratio: 9/16; object-fit: cover; transition: transform .25s ease; }
+.demo-poster:hover img { transform: scale(1.025); }
+.demo-poster > span { position: absolute; bottom: 0; left: 0; right: 0; padding: 30px 20px 20px; background: linear-gradient(transparent,rgba(4,8,20,.98) 35%); color: #fff; font-size: 21px; font-weight: 650; }
+.demo-poster small { display: block; margin-top: 6px; color: #e3dfea; font-size: 13px; font-weight: 400; }
+.demo-copy { padding: 25px 3px 0; }
+.demo-copy h3 { margin: 12px 0; font: 400 28px/1.16 Georgia,serif; letter-spacing: -.025em; }
+.demo-copy > p:last-child { color: #d0cddd; font-size: 16px; line-height: 1.6; }
+.demo-note { color: #d0cddd; text-align: center; margin: 40px auto 0; max-width: 640px; font-size: 16px; line-height: 1.6; }
+.no-script-links { text-align: center; margin-top: 24px; }
+.no-script-links a { text-decoration: underline; }
+.stelli-how { background: #060b20; }
+.how-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 26px; }
+.how-card { min-width: 0; }
+.step-number { color: #f7cf77; font: 30px Georgia,serif; margin-bottom: 18px; }
+.how-card h3 { font: 400 35px/1.1 Georgia,serif; letter-spacing: -.035em; margin-bottom: 15px; }
+.how-card > p:not(.step-number) { min-height: 82px; color: #d0cddd; font-size: 18px; line-height: 1.55; max-width: 340px; }
+.how-card img { display: block; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; margin-top: 25px; border: 1px solid #605d76; border-radius: 20px; background: #f5f4f7; }
+.stelli-sounds { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; background: linear-gradient(130deg,#211447,#0c112b); }
+.sounds-copy p { margin-bottom: 20px; font-size: 19px; line-height: 1.7; color: #ddd8e7; }
+.sounds-copy .sounds-detail { font-size: 16px; color: #c8bddb; margin: 0; }
+.stelli-discovery { min-height: 600px; }
+.stelli-discovery__copy { max-width: 535px; }
+.stelli-discovery__copy > p:not(.stelli-eyebrow) { margin: 0 0 18px; color: #d0cddd; font-size: 19px; line-height: 1.65; }
+.stelli-access { padding: 110px 24px 100px; background: radial-gradient(ellipse at 10% 90%,#64318a66,transparent 65%),linear-gradient(135deg,#101630,#2d1b59); }
+.stelli-access h2 { font-size: clamp(42px,5vw,68px); }
+.access-intro { color: #ded6e9; font-size: 20px; margin: 24px auto 32px; }
+.launch-form { position: relative; max-width: 650px; text-align: left; margin: 0 auto; }
+.launch-form > label { display: block; font-size: 16px; font-weight: 500; margin-bottom: 10px; }
+.launch-form__row { display: flex; gap: 12px; align-items: stretch; }
+.launch-form input[type=email] { width: 100%; min-width: 0; border: 1px solid #a69ab8; border-radius: 12px; padding: 16px; color: #171122; background: #fff; font-size: 17px; }
+.launch-form__row .stelli-button { white-space: nowrap; border-radius: 12px; padding: 15px 23px; min-height: 56px; }
+.signup-disclosure { margin: 16px 0; font-size: 13px; color: #d9d0e6; line-height: 1.7; }
+.signup-disclosure a, .beta-link a, .signup-contact a { text-decoration: underline; text-underline-offset: 3px; }
+.form-trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.form-status { min-height: 50px; font-size: 16px; color: #f9e6ad; line-height: 1.5; margin: 14px 0 0; }
+.form-status.is-error { color: #ffc4c4; }
+.beta-link { margin-top: 18px; color: #ded6e9; font-size: 15px; line-height: 1.6; }
+.stelli-footer__links { flex-wrap: wrap; justify-content: flex-end; }
+.demo-dialog { width: min(520px,calc(100vw - 28px)); max-height: calc(100dvh - 24px); border: 1px solid #746583; border-radius: 20px; padding: 12px; margin: auto; background: #0b1025; color: #fff; overflow: auto; }
+.demo-dialog::backdrop { background: rgba(2,5,15,.88); }
+.demo-dialog__bar { display: flex; justify-content: space-between; align-items: center; gap: 15px; padding: 4px 3px 12px; }
+.demo-dialog h2 { font-size: 18px; font-weight: 500; }
+.demo-close { min-height: 44px; padding: 8px 16px; border: 1px solid #a697b9; border-radius: 30px; background: transparent; color: #fff; cursor: pointer; }
+.demo-dialog video { display: block; width: 100%; max-height: calc(100dvh - 155px); aspect-ratio: 9/16; object-fit: contain; background: #000; border-radius: 10px; }
+.demo-dialog__note { font-size: 12px; color: #cfc4db; line-height: 1.5; padding: 10px 3px 0; }
+.dialog-open { overflow: hidden; }
+.page--signup { min-height: 100vh; background: radial-gradient(ellipse at 70% 0%,#44236a,transparent 60%),#0b1025; }
+.signup-main { max-width: 760px; margin: 70px auto 110px; padding: 0 28px; }
+.signup-main h1 { margin: 20px 0; font: 400 clamp(44px,6vw,68px)/1.08 Georgia,serif; letter-spacing: -.045em; }
+.signup-main .launch-form { margin: 35px 0; }
+.signup-contact { margin-top: 30px; color: #d0cddd; font-size: 16px; line-height: 1.7; }
+@media (max-width:850px) {
+ .page--home .stelli-hero { min-height: 820px; }
+ .stelli-nav { padding: 24px; gap: 16px; }
+ .stelli-button--nav { display: inline-flex; font-size: 13px; padding: 0 17px; min-height: 44px; }
+ .stelli-hero__copy { top: 48%; left: 26px; right: 26px; width: auto; }
+ .stelli-hero__copy h1 { font-size: clamp(40px,12vw,78px); }
+ .stelli-hero__copy > p:not(.stelli-eyebrow) { font-size: 20px; max-width: 530px; }
+ .stelli-hero__copy > .stelli-eyebrow { font-size: 10px; letter-spacing: .11em; }
+ .hero-actions { gap: 18px; }
+ .stelli-hero__caption { bottom: 28px; right: 24px; font-size: 10px; }
+ .stelli-scene-controls { bottom: 12px; left: 18px; }
+ .stelli-scene-controls .scene-pause { padding: 0 11px; margin-left: 0; }
+ .section-pad { padding: 72px 26px; }
+ .demo-grid { gap: 22px; }
+ .demo-copy h3 { font-size: 24px; }
+ .how-grid { gap: 20px; }
+ .how-card h3 { font-size: 29px; }
+ .how-card > p:not(.step-number) { font-size: 16px; min-height: 98px; }
+ .stelli-sounds { gap: 30px; }
+ .stelli-discovery { min-height: 650px; }
+ .stelli-footer { align-items: flex-start; padding: 26px; }
+ .stelli-footer__links { gap: 16px; }
+}
+@media (max-width:600px) {
+ .stelli-brand { font-size: 25px; gap: 8px; }
+ .stelli-brand img { width: 32px; height: 32px; }
+ .stelli-nav { padding: 20px; }
+ .page--home .stelli-hero { min-height: 800px; }
+ .stelli-hero__copy h1 { font-size: clamp(39px,11.8vw,66px); }
+ .stelli-hero__copy > p:not(.stelli-eyebrow) { font-size: 18px; line-height: 1.6; }
+ .hero-actions { align-items: flex-start; flex-direction: column; gap: 20px; }
+ .stelli-hero__caption { display: none; }
+ .section-heading { margin-bottom: 32px; }
+ .section-heading h2,.stelli-sounds h2 { font-size: 39px; }
+ .demo-grid { grid-template-columns: 1fr; gap: 46px; max-width: 360px; }
+ .demo-poster { max-width: 310px; margin: auto; }
+ .demo-copy { padding-top: 22px; }
+ .demo-copy h3 { font-size: 29px; }
+ .how-grid { grid-template-columns: 1fr; gap: 46px; }
+ .how-card h3 { font-size: 36px; }
+ .how-card > p:not(.step-number) { min-height: 0; font-size: 18px; }
+ .how-card img { margin-top: 22px; }
+ .stelli-sounds { grid-template-columns: 1fr; gap: 15px; }
+ .sounds-copy p { font-size: 18px; }
+ .stelli-discovery { min-height: 730px; padding: 72px 26px; }
+ .stelli-discovery__copy > p:not(.stelli-eyebrow) { font-size: 18px; }
+ .stelli-access { padding: 80px 26px 65px; }
+ .launch-form__row { flex-direction: column; }
+ .signup-disclosure { font-size: 13px; }
+ .stelli-footer { flex-direction: column; }
+ .stelli-footer__links { justify-content: flex-start; gap: 16px; font-size: 12px; }
+ .signup-main { margin-top: 40px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } .demo-poster img,.stelli-hero__scenes img { transition: none; } }
