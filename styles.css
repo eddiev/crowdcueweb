@@ -784,7 +784,18 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
 .section-heading h2, .stelli-sounds h2 { margin: 16px 0 20px; font: 400 clamp(38px,4.2vw,58px)/1.08 Georgia,serif; letter-spacing: -.045em; }
 .section-heading > p:last-child { color: #cecadb; font-size: 19px; line-height: 1.6; }
 .stelli-demos { background: radial-gradient(ellipse at 50% 12%,#30205e 0%,transparent 55%),#0b102b; }
-.demo-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; max-width: 1120px; margin: auto; }
+.demo-carousel { --demo-gap: 28px; --demo-visible: 3; max-width: 1120px; margin: auto; }
+.demo-track { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - (var(--demo-visible) - 1) * var(--demo-gap)) / var(--demo-visible)); gap: var(--demo-gap); overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.demo-track::-webkit-scrollbar { display: none; }
+.demo-track > .demo-card { scroll-snap-align: start; }
+.demo-track:focus-visible { outline: 2px solid #f7cf77; outline-offset: 6px; }
+.demo-carousel__controls { display: flex; align-items: center; justify-content: flex-end; gap: 12px; margin: 0 0 24px; }
+.demo-carousel__controls[hidden] { display: none; }
+.demo-carousel__status { color: #d0cddd; font-size: 14px; margin: 0 10px 0 0; font-variant-numeric: tabular-nums; }
+.demo-carousel__controls button { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid #a092b3; border-radius: 50%; background: #ffffff08; color: #fff; font: 24px/1 system-ui; cursor: pointer; }
+.demo-carousel__controls button:hover:not(:disabled) { border-color: #f7cf77; background: #f7cf7715; }
+.demo-carousel__controls button:focus-visible { outline: 2px solid #f7cf77; outline-offset: 4px; }
+.demo-carousel__controls button:disabled { opacity: .3; cursor: default; }
 .demo-card { min-width: 0; }
 .demo-poster { position: relative; display: block; width: 100%; padding: 0; border: 1px solid #777083; border-radius: 22px; overflow: hidden; background: #111425; text-align: left; cursor: pointer; }
 .demo-poster img { display: block; width: 100%; height: auto; aspect-ratio: 9/16; object-fit: cover; transition: transform .25s ease; }
@@ -851,7 +862,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
  .stelli-scene-controls { bottom: 12px; left: 18px; }
  .stelli-scene-controls .scene-pause { padding: 0 11px; margin-left: 0; }
  .section-pad { padding: 72px 26px; }
- .demo-grid { gap: 22px; }
+ .demo-carousel { --demo-gap: 22px; --demo-visible: 2; }
  .demo-copy h3 { font-size: 24px; }
  .how-grid { gap: 20px; }
  .how-card h3 { font-size: 29px; }
@@ -872,7 +883,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
  .stelli-hero__caption { display: none; }
  .section-heading { margin-bottom: 32px; }
  .section-heading h2,.stelli-sounds h2 { font-size: 39px; }
- .demo-grid { grid-template-columns: 1fr; gap: 46px; max-width: 360px; }
+ .demo-carousel { --demo-gap: 26px; --demo-visible: 1; max-width: 360px; }
  .demo-poster { max-width: 310px; margin: auto; }
  .demo-copy { padding-top: 22px; }
  .demo-copy h3 { font-size: 29px; }

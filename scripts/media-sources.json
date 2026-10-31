@@ -19,5 +19,21 @@
     "sourceSHA256": "708cd86e8e313b17dd7388c979e4632672dafa0867c4b6e9a0c1f50edc92b81b",
     "webSHA256": "856e4012c4cceac1bda9a6101bafe96248eaba5e5d3a0124d6d87bf3ac6ab050",
     "treatment": "720p web encoding; approved edit and audio preserved; brand ending only"
+  },
+  "wedding-remote": {
+    "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/wedding-remote-v3/exports/Stelli-Wedding-Remote-v3-brand-FINAL.mp4",
+    "sourceSHA256": "1bed9f246963cd8f87d73999154f6594e97bdd9055a62d2d2df59c8f37d99dbe",
+    "webSHA256": "30f4e1850422bd4a64cb90fc2ac7591299a41fda7ebb733f52987554b7432427",
+    "treatment": "720p web encoding; approved edit preserved and audio stream copied without re-encoding",
+    "approvedDate": "2026-10-31",
+    "approvalRecord": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/wedding-remote-v3/APPROVED_FINAL.json"
+  },
+  "discover-museum": {
+    "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/discover-museum-v5/exports/Stelli-Discover-Museum-v5-brand-FINAL.mp4",
+    "sourceSHA256": "5207a2ec83542d57a8551aa108aa93c6e9603344857a887e29dd17a1bae7534d",
+    "webSHA256": "02abf1784ec5a1004013a2bd1f79593fd2490edf5a99439539966b5864b0f765",
+    "treatment": "720p web encoding; approved edit preserved and audio stream copied without re-encoding",
+    "approvedDate": "2026-10-31",
+    "approvalRecord": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/discover-museum-v5/APPROVED_FINAL.json"
   }
 }

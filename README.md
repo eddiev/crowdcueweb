@@ -41,7 +41,7 @@ Expected:
 
 ## Pre-launch homepage (October 30, 2026)
 
-The homepage uses approved D&D v10, baseball v5 and Sunset Sessions v4 brand videos. Web encodes retain their edits/audio; the original masters remain in the app marketing project. `scripts/media-sources.json` records source checksums. Do not replace a master when updating website derivatives.
+The homepage uses approved Sunset Sessions v4, Wedding Remote v3, Discover Museum v5, baseball v9 and D&D v10 brand videos. The demo carousel follows that order, shows three cards on desktop, two below 850px and one below 600px, and supports arrow controls, horizontal scrolling, and keyboard navigation. Videos load on demand into the existing native player; the carousel does not auto-advance. Web encodes retain their edits/audio; the original masters remain in the app marketing project. `scripts/media-sources.json` records source checksums. Do not replace a master when updating website derivatives.
 
 Build: `python3 scripts/build_site.py`. Hosting serves only `dist/`, built from an explicit public-file allowlist. Internal Markdown, deployment records and backend source are not included. Keep the existing Auth, invitation and association-file routes intact.
 
