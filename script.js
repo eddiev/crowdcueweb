@@ -55,15 +55,15 @@
 
   const dialog = document.querySelector('#demo-player');
   const video = dialog?.querySelector('video');
-  const names = {'sunset-sessions': 'Sunset Sessions', 'wedding-remote': 'Wedding', 'discover-museum': 'Discover', 'ball-game': 'Ball Game', 'game-night': 'D&D'};
+  const names = {'sunset-sessions': 'Sunset Sessions', 'friendsgiving': 'Friendsgiving', 'discover-museum': 'Discover', 'ball-game': 'Ball Game', 'game-night': 'D&D'};
   let trigger = null;
   document.querySelectorAll('[data-demo]').forEach(button => button.addEventListener('click', () => {
     const slug = button.dataset.demo;
     if (!Object.hasOwn(names, slug) || !dialog || !video) return;
     trigger = button;
     document.querySelector('#demo-title').textContent = names[slug];
-    const revision = slug === 'ball-game' ? '?v=9-20261031' : slug === 'wedding-remote' ? '?v=4-james-20261031' : '';
-    video.src = `assets/demos/${slug}.mp4${revision}`; video.poster = `assets/demos/${slug}.webp`;
+    const revision = slug === 'ball-game' ? '?v=9-20261031' : slug === 'friendsgiving' ? '?v=5-frank-20261103' : '';
+    video.src = `assets/demos/${slug}.mp4${revision}`; video.poster = `assets/demos/${slug}.webp${slug === 'friendsgiving' ? '?v=5-frank-20261103' : ''}`;
     video.setAttribute('aria-label', `${names[slug]} Stelli demonstration`);
     dialog.showModal(); document.body.classList.add('dialog-open');
     video.play().catch(() => { /* Native controls remain available if playback is blocked. */ });

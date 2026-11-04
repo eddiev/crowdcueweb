@@ -20,14 +20,14 @@
     "webSHA256": "856e4012c4cceac1bda9a6101bafe96248eaba5e5d3a0124d6d87bf3ac6ab050",
     "treatment": "720p web encoding; approved edit and audio preserved; brand ending only"
   },
-  "wedding-remote": {
-    "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/wedding-remote-v4-voice-auditions/exports/Stelli-Wedding-Remote-v4-James-brand-FINAL.mp4",
-    "sourceSHA256": "5d1cb76daf97056d609f1476022ec6b1b93c610bd47ae249eddee9c9ea8adda1",
-    "webSHA256": "95d1b01dd984cf589ceaa38bf82263ec5e094bcb0cd776991e3a56652024885e",
-    "treatment": "Approved James officiant audio copied without re-encoding; existing approved 720p video stream copied unchanged",
-    "approvedDate": "2026-10-31",
-    "approvalRecord": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/wedding-remote-v4-voice-auditions/APPROVED_FINAL.json",
-    "webURL": "assets/demos/wedding-remote.mp4?v=4-james-20261031"
+  "friendsgiving": {
+    "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/friendsgiving-v5-frank/exports/Stelli-Friendsgiving-v5-Frank-REVIEW.mp4",
+    "sourceSHA256": "1a95561990464d00725ecfaa5f5d300f70d877af630943a86dc8f6491ba7f167",
+    "webSHA256": "3ab1037ca7c6c34b3916c55427745c40c7e1c0c65ea7ec42699b7b51af360ad1",
+    "treatment": "720p high-quality web encoding; approved V5 Frank audio stream copied without re-encoding; Friendsgiving replaces the wedding demo slot",
+    "approvedDate": "2026-11-03",
+    "approvalRecord": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/friendsgiving-v5-frank/APPROVED_FINAL.json",
+    "webURL": "assets/demos/friendsgiving.mp4?v=5-frank-20261103"
   },
   "discover-museum": {
     "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/discover-museum-v5/exports/Stelli-Discover-Museum-v5-brand-FINAL.mp4",
