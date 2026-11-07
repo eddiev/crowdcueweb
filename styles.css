@@ -903,3 +903,13 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
  .signup-main { margin-top: 40px; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } .demo-poster img,.stelli-hero__scenes img { transition: none; } }
+
+/* Keep the guide visible in the homepage navigation at every screen size. */
+.stelli-nav__links { display: flex; align-items: center; gap: 28px; }
+.stelli-nav__guide { display: inline-flex; align-items: center; min-height: 44px; color: #fff; font-size: 15px; font-weight: 600; text-underline-offset: 5px; }
+.stelli-nav__guide:hover { text-decoration: underline; }
+@media (max-width:600px) {
+ .stelli-nav { flex-wrap: wrap; }
+ .stelli-nav__links { width: 100%; justify-content: space-between; gap: 12px; }
+ .stelli-nav__guide { font-size: 14px; }
+}
