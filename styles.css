@@ -760,8 +760,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
 .skip-link { position: fixed; top: -100px; left: 16px; z-index: 20; padding: 12px 20px; background: #ffc400; color: #081215; border-radius: 8px; }
 .skip-link:focus { top: 12px; }
 :focus-visible { outline: 3px solid #c9acff; outline-offset: 5px; }
-.stelli-button { color: #151020; border: 1px solid transparent; cursor: pointer; font-weight: 700; }
-.stelli-button:hover { color: #151020; background: #ffdc72; }
+.stelli-button { color: #fff; border: 1px solid transparent; cursor: pointer; font-weight: 700; }
+.stelli-button:hover { color: #fff; background: #ffdc72; }
 .stelli-button:disabled { opacity: .65; cursor: wait; }
 .page--home .stelli-hero { min-height: 900px; }
 .stelli-hero__copy { width: min(790px,66vw); top: 49%; }
