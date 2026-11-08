@@ -913,3 +913,10 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
  .stelli-nav__links { width: 100%; justify-content: space-between; gap: 12px; }
  .stelli-nav__guide { font-size: 14px; }
 }
+
+.playback-disclosure { background: #f7f4ec; color: #142d2a; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.playback-disclosure .stelli-eyebrow { color: #526b58; }
+.playback-disclosure__copy { min-width: 0; font-size: 17px; line-height: 1.75; }
+.playback-disclosure__copy p { margin: 0 0 18px; }
+.playback-disclosure__copy a { color: inherit; text-decoration: underline; text-underline-offset: 4px; font-weight: 600; }
+@media (max-width: 700px) { .playback-disclosure { grid-template-columns: 1fr; gap: 24px; }.playback-disclosure__copy { font-size: 16px; } }
