@@ -1,0 +1,34 @@
+{
+  "sha": "3755630cd3aba9de354f2c81d6222e89a2a107b8",
+  "verifiedAt": "2026-11-09T21:42:18.351Z",
+  "proof": [
+    {
+      "file": "index.html",
+      "sha256": "3148057cfc384d3cf0d5fb95974899ab2f0df98c0826beed523e8fe4f0085ed9"
+    },
+    {
+      "file": "contact.html",
+      "sha256": "473eaa26af5cd478256c79b5686d7e1ab230a84e671eb7c1b7407d91f5aab59e"
+    },
+    {
+      "file": "contact.js",
+      "sha256": "e202219cbf840cf336bea282e2b30a5b0a51873ac4816124bc87c3582d99f3d0"
+    },
+    {
+      "file": "styles.css",
+      "sha256": "8eca42b3f62643d04db4a01a407a0afb05803829562b385fe109e36eac6c5220"
+    },
+    {
+      "file": "how-to.html",
+      "sha256": "7d0e3818fc779ac316599a723bb3219adf7513a02a678cb39c3a8c00150277f6"
+    },
+    {
+      "file": "how-to.css",
+      "sha256": "7240555e5b14edea7f1a4139c4d1e9aa372b7d5e267728114305281accdcaf07"
+    },
+    {
+      "file": "how-to.js",
+      "sha256": "129d48a09a403e9acc2eb8dfdea51fd109e4762880177da79f90d21b76648373"
+    }
+  ]
+}

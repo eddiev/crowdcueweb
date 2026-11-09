@@ -1,0 +1,51 @@
+{
+  "verifiedAt": "2026-11-09T21:45:11.310Z",
+  "deployedSha": "3755630cd3aba9de354f2c81d6222e89a2a107b8",
+  "sourceBranch": "codex/launch-safety-policy-20261102",
+  "localTests": {
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0,
+    "environment": "local Firebase Emulator"
+  },
+  "devForm": {
+    "run": "qa_contact_20261109_a",
+    "browser": "Mac in-app browser",
+    "status": "success shown; provider accepted email"
+  },
+  "productionSmoke": {
+    "submissions": 1,
+    "status": "success shown; provider accepted email"
+  },
+  "inboxReceipt": "not separately confirmed; sending-only provider API key does not permit delivery-event reads",
+  "environments": [
+    {
+      "project": "crowdcue-dev",
+      "state": "ACTIVE",
+      "updateTime": "2026-11-09T21:41:31.626048904Z",
+      "revision": "contactstelli-00002-pej",
+      "source": {
+        "bucket": "gcf-v2-sources-971029439374-us-central1",
+        "object": "contactStelli/function-source.zip",
+        "generation": "1794260442846515"
+      },
+      "ttl": {
+        "state": "ACTIVE"
+      }
+    },
+    {
+      "project": "crowdcue-775b5",
+      "state": "ACTIVE",
+      "updateTime": "2026-11-09T21:43:29.872298393Z",
+      "revision": "contactstelli-00001-wuc",
+      "source": {
+        "bucket": "gcf-v2-sources-97113621281-us-central1",
+        "object": "contactStelli/function-source.zip",
+        "generation": "1794260556160912"
+      },
+      "ttl": {
+        "state": "CREATING"
+      }
+    }
+  ]
+}
