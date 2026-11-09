@@ -53,6 +53,10 @@
         }
       },
       {
+        "source": "/how-to",
+        "destination": "/how-to.html"
+      },
+      {
         "source": "/privacypolicy",
         "destination": "/privacypolicy.html"
       },

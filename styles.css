@@ -760,8 +760,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
 .skip-link { position: fixed; top: -100px; left: 16px; z-index: 20; padding: 12px 20px; background: #ffc400; color: #081215; border-radius: 8px; }
 .skip-link:focus { top: 12px; }
 :focus-visible { outline: 3px solid #c9acff; outline-offset: 5px; }
-.stelli-button { color: #151020; border: 1px solid transparent; cursor: pointer; font-weight: 700; }
-.stelli-button:hover { color: #151020; background: #ffdc72; }
+.stelli-button { color: #fff; border: 1px solid transparent; cursor: pointer; font-weight: 700; }
+.stelli-button:hover { color: #fff; background: #ffdc72; }
 .stelli-button:disabled { opacity: .65; cursor: wait; }
 .page--home .stelli-hero { min-height: 900px; }
 .stelli-hero__copy { width: min(790px,66vw); top: 49%; }
@@ -916,3 +916,20 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
 
 /* Footer destinations remain easy to tap as links wrap on small screens. */
 .stelli-footer__links a { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* Keep the guide visible in the homepage navigation at every screen size. */
+.stelli-nav__links { display: flex; align-items: center; gap: 28px; }
+.stelli-nav__guide { display: inline-flex; align-items: center; min-height: 44px; color: #fff; font-size: 15px; font-weight: 600; text-underline-offset: 5px; }
+.stelli-nav__guide:hover { text-decoration: underline; }
+@media (max-width:600px) {
+ .stelli-nav { flex-wrap: wrap; }
+ .stelli-nav__links { width: 100%; justify-content: space-between; gap: 12px; }
+ .stelli-nav__guide { font-size: 14px; }
+}
+
+.playback-disclosure { background: #f7f4ec; color: #142d2a; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.playback-disclosure .stelli-eyebrow { color: #526b58; }
+.playback-disclosure__copy { min-width: 0; font-size: 17px; line-height: 1.75; }
+.playback-disclosure__copy p { margin: 0 0 18px; }
+.playback-disclosure__copy a { color: inherit; text-decoration: underline; text-underline-offset: 4px; font-weight: 600; }
+@media (max-width: 700px) { .playback-disclosure { grid-template-columns: 1fr; gap: 24px; }.playback-disclosure__copy { font-size: 16px; } }
