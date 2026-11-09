@@ -903,3 +903,16 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
  .signup-main { margin-top: 40px; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } .demo-poster img,.stelli-hero__scenes img { transition: none; } }
+
+/* Dedicated contact page. */
+.page--signup .contact-form { display: block; position: relative; max-width: 650px; margin: 35px 0; padding: 0; border: 0; background: transparent; backdrop-filter: none; text-align: left; }
+.contact-form > label { display: block; margin: 22px 0 10px; font-size: 16px; font-weight: 500; }
+.contact-form > input, .contact-form > textarea { box-sizing: border-box; display: block; width: 100%; min-width: 0; border: 1px solid #a69ab8; border-radius: 12px; padding: 16px; background: #fff; color: #171122; font: inherit; font-size: 17px; }
+.contact-form > textarea { resize: vertical; min-height: 170px; }
+.contact-form > input:focus-visible, .contact-form > textarea:focus-visible { outline: 3px solid var(--stelli-gold); outline-offset: 3px; }
+.contact-form .stelli-button { min-height: 48px; cursor: pointer; }
+.contact-form .stelli-button:disabled { opacity: .7; cursor: wait; }
+@media (max-width:600px) { .contact-form .stelli-button { width: 100%; } }
+
+/* Footer destinations remain easy to tap as links wrap on small screens. */
+.stelli-footer__links a { display: inline-flex; align-items: center; min-height: 44px; }

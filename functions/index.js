@@ -29,3 +29,8 @@ exports.subscribeToLaunchUpdates = onRequest({region: 'us-central1', maxInstance
     return res.status(503).json({error: 'We couldn’t save your email. Please try again shortly.'});
   }
 });
+
+const {defineSecret} = require('firebase-functions/params');
+const {createContactHandler} = require('./contact');
+const RESEND_API_KEY = defineSecret('RESEND_API_KEY');
+exports.contactStelli = onRequest({region: 'us-central1', maxInstances: 3, concurrency: 20, memory: '256MiB', timeoutSeconds: 20, invoker: 'public', secrets: [RESEND_API_KEY]}, createContactHandler({db: getFirestore, apiKey: () => RESEND_API_KEY.value(), emulator: process.env.FUNCTIONS_EMULATOR === 'true'}));

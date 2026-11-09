@@ -39,6 +39,13 @@
     ],
     "rewrites": [
       {
+        "source": "/api/contact",
+        "function": {
+          "functionId": "contactStelli",
+          "region": "us-central1"
+        }
+      },
+      {
         "source": "/api/launch-updates",
         "function": {
           "functionId": "subscribeToLaunchUpdates",
