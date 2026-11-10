@@ -63,7 +63,7 @@
     trigger = button;
     document.querySelector('#demo-title').textContent = names[slug];
     const revision = slug === 'ball-game' ? '?v=9-20261031' : slug === 'friendsgiving' ? '?v=5-frank-20261103' : '';
-    video.src = `assets/demos/${slug}.mp4${revision}`; video.poster = `assets/demos/${slug}.webp${slug === 'friendsgiving' ? '?v=5-frank-20261103' : ''}`;
+    video.src = `assets/demos/${slug}.mp4${revision}`; video.poster = slug === 'sunset-sessions' ? 'assets/demos/sunset-sessions-friends.webp' : `assets/demos/${slug}.webp${slug === 'friendsgiving' ? '?v=5-frank-20261103' : ''}`;
     video.setAttribute('aria-label', `${names[slug]} Stelli demonstration`);
     dialog.showModal(); document.body.classList.add('dialog-open');
     video.play().catch(() => { /* Native controls remain available if playback is blocked. */ });

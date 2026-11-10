@@ -18,7 +18,15 @@
     "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/sunset-sessions-v4/exports/Stelli-Sunset-Sessions-v4-brand-REVIEW.mp4",
     "sourceSHA256": "708cd86e8e313b17dd7388c979e4632672dafa0867c4b6e9a0c1f50edc92b81b",
     "webSHA256": "856e4012c4cceac1bda9a6101bafe96248eaba5e5d3a0124d6d87bf3ac6ab050",
-    "treatment": "720p web encoding; approved edit and audio preserved; brand ending only"
+    "treatment": "720p web encoding; approved edit and audio preserved; brand ending only",
+    "poster": {
+      "file": "assets/demos/sunset-sessions-friends.webp",
+      "sourceStill": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/sunset-sessions-v4/exports/01-overlook.png",
+      "sourceStillSHA256": "2e3ad069b46206eb536f51750e9b5d1196a5862323d260e3faf809e87893ef60",
+      "approvedVideoTimeSeconds": 5.5,
+      "description": "Opening overlook scene with all four friends; resized to540x960 WebP for carousel and video poster.",
+      "sha256": "fb673fafd85bf037e38605418868f6bd533b05f68d3721d9cd7ec1914057ef69"
+    }
   },
   "friendsgiving": {
     "approvedSource": "/Users/eddiev/Dev/CrowdCue/Marketing/demos/friendsgiving-v5-frank/exports/Stelli-Friendsgiving-v5-Frank-REVIEW.mp4",
