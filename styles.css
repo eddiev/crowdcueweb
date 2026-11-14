@@ -935,6 +935,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
 @media (max-width: 700px) { .playback-disclosure { grid-template-columns: 1fr; gap: 24px; }.playback-disclosure__copy { font-size: 16px; } }
 
 /* Original Apple badge artwork, with clear space around its 52px height. */
-.hero-actions .app-store-badge { display: inline-flex; flex: 0 0 auto; margin: 13px 0; border-radius: 7px; }
+.hero-download { display: grid; justify-items: start; gap: 13px; margin: 13px 0; }
+.stelli-hero__copy .hero-availability { margin: 0; font-size: 16px; line-height: 1.5; color: #fff; }
+.hero-actions .app-store-badge { display: inline-flex; flex: 0 0 auto; border-radius: 7px; }
 .app-store-badge img { display: block; width: auto; height: 52px; }
 .app-store-badge:focus-visible { outline: 3px solid #f7cf77; outline-offset: 6px; }
